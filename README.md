@@ -1,4 +1,3 @@
-content = """
 # ClientPilot  
 ### Voice-First, Privacy-First Mobile CRM
 
