@@ -436,13 +436,6 @@ They should feel like **a conversation with your assistant**.
 ---
 
 # License
-
-Private Project  
 All Rights Reserved
 """
 
-path = "/mnt/data/README_ClientPilot.md"
-with open(path, "w") as f:
-    f.write(content)
-
-path
