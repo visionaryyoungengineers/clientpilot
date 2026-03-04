@@ -1,0 +1,85 @@
+[
+    {
+        "name": "PM Mudra Yojana",
+        "ministry": "Ministry of Finance",
+        "description": "Provides loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises.",
+        "eligibility": "Any Indian citizen with a business plan for non-farm sector income-generating activities.",
+        "link": "https://www.mudra.org.in",
+        "businessTypes": [
+            "Startup",
+            "MSME",
+            "Sole Proprietor"
+        ]
+    },
+    {
+        "name": "Startup India Seed Fund",
+        "ministry": "DPIIT",
+        "description": "Financial assistance to startups for proof of concept, prototype development, product trials, and market entry.",
+        "eligibility": "DPIIT-recognised startups up to 2 years old with innovative & scalable business model.",
+        "link": "https://seedfund.startupindia.gov.in",
+        "businessTypes": [
+            "Startup",
+            "Tech"
+        ]
+    },
+    {
+        "name": "MSME Credit Guarantee Scheme",
+        "ministry": "Ministry of MSME",
+        "description": "Collateral-free credit up to ₹2 crore for small businesses without third-party guarantee.",
+        "eligibility": "Existing MSMEs registered with Udyam portal generating revenue.",
+        "link": "https://www.cgtmse.in",
+        "businessTypes": [
+            "MSME",
+            "Sole Proprietor",
+            "Partnership"
+        ]
+    },
+    {
+        "name": "Atal Innovation Mission",
+        "ministry": "NITI Aayog",
+        "description": "Promotes innovation and entrepreneurship through Atal Incubation Centres and Tinkering Labs.",
+        "eligibility": "Innovators, startups and educational institutions in India.",
+        "link": "https://aim.gov.in",
+        "businessTypes": [
+            "Startup",
+            "Tech",
+            "Education"
+        ]
+    },
+    {
+        "name": "GeM — Government e-Marketplace",
+        "ministry": "Ministry of Commerce",
+        "description": "Online platform for procurement of goods & services by Government. Sellers can register and sell directly to govt bodies.",
+        "eligibility": "Any registered Indian business or individual seller.",
+        "link": "https://gem.gov.in",
+        "businessTypes": [
+            "MSME",
+            "Startup",
+            "Sole Proprietor",
+            "Partnership"
+        ]
+    },
+    {
+        "name": "National SC-ST Hub",
+        "ministry": "Ministry of MSME",
+        "description": "Promotes entrepreneurship among SC/ST communities through training, mentoring, and market linkages.",
+        "eligibility": "SC/ST entrepreneurs and aspiring entrepreneurs.",
+        "link": "https://www.nssh.gov.in",
+        "businessTypes": [
+            "MSME",
+            "Startup",
+            "Sole Proprietor"
+        ]
+    },
+    {
+        "name": "ZED Certification Scheme",
+        "ministry": "Ministry of MSME",
+        "description": "Zero Defect Zero Effect certification for MSME products to enhance quality and reduce environmental impact.",
+        "eligibility": "MSME units registered on Udyam portal.",
+        "link": "https://zed.org.in",
+        "businessTypes": [
+            "MSME",
+            "Manufacturing"
+        ]
+    }
+]

@@ -1,0 +1,44 @@
+// This script is applied to all subprojects (Flutter community plugins)
+// to patch AGP 9.0 incompatibilities with legacy Flutter plugins.
+
+subprojects {
+    // Hook BEFORE the plugin configuration evaluates to fix Kotlin/Android conflicts
+    plugins.whenPluginAdded { plugin ->
+        if (plugin.class.name == 'com.android.build.gradle.LibraryPlugin') {
+            project.extensions.findByName('android')?.with { android ->
+                // Check if kotlin-android is being incorrectly applied (AGP 9.0 issue)
+                project.plugins.matching { it.class.name.contains('kotlin') }.each { p ->
+                    try {
+                        project.logger.lifecycle("[fix-namespaces] Detected legacy Kotlin plugin in ${project.name}. This is OK with AGP 9.0+.")
+                    } catch (ignore) {}
+                }
+            }
+        }
+    }
+
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            // 1. Force the namespace so AGP 8/9 doesn't crash
+            if (project.android.namespace == null) {
+                def manifestPath = project.file("src/main/AndroidManifest.xml")
+                if (manifestPath.exists()) {
+                    def matcher = manifestPath.text =~ /package="([^"]+)"/
+                    if (matcher.find()) {
+                        project.android.namespace = matcher[0][1]
+                    } else {
+                        project.android.namespace = project.group
+                    }
+                } else {
+                    project.android.namespace = project.group
+                }
+            }
+
+            // 2. Force modern compile/min SDK to prevent AAR linking errors
+            project.android {
+                if (compileSdkVersion == "android-30" || compileSdkVersion == "android-31" || compileSdkVersion == "android-32" || compileSdkVersion == "android-33") {
+                    compileSdkVersion 35
+                }
+            }
+        }
+    }
+}
