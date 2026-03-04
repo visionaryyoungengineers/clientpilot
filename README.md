@@ -1,33 +1,32 @@
-ClientPilot
-Voice-First, Privacy-First Mobile CRM
+content = """
+# ClientPilot  
+### Voice-First, Privacy-First Mobile CRM
 
-ClientPilot is a next-generation mobile CRM designed for small businesses, built around a voice-first interaction model and a local-first AI architecture.
+ClientPilot is a **next-generation mobile CRM designed for small businesses**, built around a **voice-first interaction model** and a **local-first AI architecture**.
 
-Unlike traditional CRMs that depend heavily on cloud infrastructure, ClientPilot is designed to operate primarily on-device, ensuring privacy, speed, and reliability even in low-connectivity environments.
+Unlike traditional CRMs that depend heavily on cloud infrastructure, ClientPilot is designed to **operate primarily on-device**, ensuring **privacy, speed, and reliability even in low-connectivity environments**.
 
-The system integrates local AI reasoning, speech recognition, and intelligent task automation to allow users to manage clients, conversations, and business operations using natural voice commands.
+The system integrates **local AI reasoning, speech recognition, and intelligent task automation** to allow users to manage clients, conversations, and business operations using **natural voice commands**.
 
-Vision
+---
 
-Modern CRM systems are built for large enterprises and complex workflows.
+# Vision
+
+Modern CRM systems are built for **large enterprises and complex workflows**.
 
 ClientPilot is designed differently.
 
 It is built for:
 
-Small businesses
-
-Entrepreneurs
-
-Field sales teams
-
-Independent professionals
-
-Service providers
+- Small businesses
+- Entrepreneurs
+- Field sales teams
+- Independent professionals
+- Service providers
 
 The goal is simple:
 
-Replace manual CRM data entry with natural voice interaction.
+> Replace manual CRM data entry with **natural voice interaction**.
 
 Users should be able to say:
 
@@ -35,61 +34,55 @@ Users should be able to say:
 
 and the system should automatically:
 
-Recognize speech
+1. Recognize speech
+2. Identify the contact
+3. Extract the task
+4. Schedule a follow-up
+5. Link it to the conversation
 
-Identify the contact
+---
 
-Extract the task
+# Core Principles
 
-Schedule a follow-up
-
-Link it to the conversation
-
-Core Principles
-Voice First
-
-The entire system is designed around voice-driven workflows.
+### Voice First
+The entire system is designed around **voice-driven workflows**.
 
 Users interact with the CRM primarily through:
 
-Speech input
+- Speech input
+- Voice commands
+- AI-assisted summarization
 
-Voice commands
+---
 
-AI-assisted summarization
-
-Privacy by Design
-
-ClientPilot prioritizes data ownership and privacy.
+### Privacy by Design
+ClientPilot prioritizes **data ownership and privacy**.
 
 Key policies:
 
-AI reasoning runs locally where possible
+- AI reasoning runs locally where possible
+- Speech processing can run on-device
+- Contact data stays on the user's device
+- Cloud is optional, not mandatory
 
-Speech processing can run on-device
+---
 
-Contact data stays on the user's device
-
-Cloud is optional, not mandatory
-
-Local-First Architecture
-
-The system is built so that core operations do not require internet connectivity.
+### Local-First Architecture
+The system is built so that **core operations do not require internet connectivity**.
 
 Features that work offline:
 
-Contact management
+- Contact management
+- Conversation logging
+- Task creation
+- Voice note capture
+- AI summarization (local model)
 
-Conversation logging
+---
 
-Task creation
+# Key Features
 
-Voice note capture
-
-AI summarization (local model)
-
-Key Features
-Voice CRM
+## Voice CRM
 
 Users can perform CRM tasks using voice commands.
 
@@ -101,66 +94,62 @@ Examples:
 
 "Remind me to call the supplier in 2 days."
 
-Smart Conversation Tracking
+---
+
+## Smart Conversation Tracking
 
 Each contact maintains a structured communication history.
 
 Includes:
 
-Notes
+- Notes
+- Voice summaries
+- Meeting logs
+- Follow-up tasks
 
-Voice summaries
+---
 
-Meeting logs
+## Automated Follow-ups
 
-Follow-up tasks
-
-Automated Follow-ups
-
-ClientPilot automatically generates actionable tasks from conversations.
+ClientPilot automatically generates **actionable tasks** from conversations.
 
 Examples:
 
-Payment reminders
+- Payment reminders
+- Lead follow-ups
+- Meeting reminders
+- Supplier check-ins
 
-Lead follow-ups
+---
 
-Meeting reminders
-
-Supplier check-ins
-
-Contact Intelligence
+## Contact Intelligence
 
 Each contact profile can contain:
 
-Basic information
+- Basic information
+- Custom fields
+- Conversation history
+- Linked tasks
+- Relationship tags
 
-Custom fields
+---
 
-Conversation history
-
-Linked tasks
-
-Relationship tags
-
-Team Collaboration
+## Team Collaboration
 
 Teams can collaborate inside the CRM by sharing:
 
-Contacts
+- Contacts
+- Conversations
+- Follow-up tasks
+- Responsibilities
 
-Conversations
+---
 
-Follow-up tasks
+# System Architecture
 
-Responsibilities
-
-System Architecture
-
-ClientPilot uses a modular mobile architecture.
+ClientPilot uses a **modular mobile architecture**.
 
 Mobile App (Flutter)
-        │
         │
         ▼
 Voice Input Layer
@@ -181,7 +170,10 @@ CRM Logic Engine
         ▼
 Local Data Store
 (On-device storage)
-Voice Processing Pipeline
+
+---
+
+# Voice Processing Pipeline
 
 The voice-first interaction works through the following pipeline:
 
@@ -209,121 +201,122 @@ Example:
 
 User says:
 
-"Follow up with Rakesh about the quotation on Monday."
+> "Follow up with Rakesh about the quotation on Monday."
 
 System performs:
 
-Speech Recognition
-→ Intent Detection
-→ Contact Identification
-→ Task Creation
+Speech Recognition  
+→ Intent Detection  
+→ Contact Identification  
+→ Task Creation  
 → Reminder Scheduling
 
-Local AI Processing
+---
 
-ClientPilot is designed to support on-device AI models.
+# Local AI Processing
+
+ClientPilot is designed to support **on-device AI models**.
 
 Possible local inference engines:
 
-GGUF LLM models
-
-Whisper-based STT
-
-Quantized transformer models
-
-Edge AI frameworks
+- GGUF LLM models
+- Whisper-based STT
+- Quantized transformer models
+- Edge AI frameworks
 
 Benefits:
 
-Faster response
+- Faster response
+- Privacy protection
+- Reduced cloud dependency
+- Works offline
 
-Privacy protection
+---
 
-Reduced cloud dependency
-
-Works offline
-
-Data Model Overview
+# Data Model Overview
 
 Core entities inside the CRM include:
 
-Contact
+### Contact
 
 Represents a client or relationship.
 
 Fields may include:
 
-Name
+- Name
+- Phone number
+- Email
+- Custom attributes
+- Tags
 
-Phone number
+---
 
-Email
-
-Custom attributes
-
-Tags
-
-Conversation
+### Conversation
 
 Stores interaction history with a contact.
 
 Includes:
 
-Meeting notes
+- Meeting notes
+- Voice summaries
+- Communication logs
 
-Voice summaries
+---
 
-Communication logs
-
-Actionable Tasks
+### Actionable Tasks
 
 Represents follow-ups or tasks generated from conversations.
 
 Examples:
 
-Payment reminders
+- Payment reminders
+- Lead nurturing
+- Supplier coordination
 
-Lead nurturing
+---
 
-Supplier coordination
-
-Team Members
+### Team Members
 
 Represents collaborators within the CRM.
 
 Supports:
 
-task delegation
+- task delegation
+- contact ownership
+- workflow collaboration
 
-contact ownership
+---
 
-workflow collaboration
-
-User Profile
+### User Profile
 
 Stores system preferences and user identity.
 
-Technology Stack
+---
 
-Frontend
+# Technology Stack
+
+Frontend  
 Flutter (Material 3 UI)
 
-Language
+Language  
 Dart
 
-Platform
+Platform  
 Android (Primary)
 
-AI Integration
+AI Integration  
 Local LLM support planned
 
-Speech Processing
+Speech Processing  
 On-device speech recognition
 
-Data Storage
+Data Storage  
 Local database
 
-Project Structure
+---
+
+# Project Structure
+
 clientpilot_flutter
 │
 ├── lib
@@ -350,77 +343,107 @@ clientpilot_flutter
 ├── pubspec.yaml
 │
 └── analysis_options.yaml
-Getting Started
-Install Flutter
+
+---
+
+# Getting Started
+
+### Install Flutter
+
 flutter doctor
-Install dependencies
+
+---
+
+### Install dependencies
+
 flutter pub get
-Run the application
+
+---
+
+### Run the application
+
 flutter run
-Build APK
+
+---
+
+# Build APK
+
 flutter build apk
 
 APK output:
 
 build/app/outputs/flutter-apk/
-Future Roadmap
+
+---
+
+# Future Roadmap
 
 Planned platform capabilities:
 
-AI Enhancements
+### AI Enhancements
 
-On-device LLM reasoning
+- On-device LLM reasoning
+- Automatic conversation summarization
+- Predictive follow-ups
+- Smart contact insights
 
-Automatic conversation summarization
+---
 
-Predictive follow-ups
+### Communication Integrations
 
-Smart contact insights
+- WhatsApp automation
+- Telegram messaging
+- Email automation
+- SMS follow-ups
 
-Communication Integrations
+---
 
-WhatsApp automation
+### Collaboration
 
-Telegram messaging
+- Multi-user CRM sync
+- Team dashboards
+- shared contact ownership
 
-Email automation
+---
 
-SMS follow-ups
+### Advanced Automation
 
-Collaboration
+- AI sales assistant
+- voice-based lead qualification
+- intelligent CRM workflows
 
-Multi-user CRM sync
+---
 
-Team dashboards
-
-shared contact ownership
-
-Advanced Automation
-
-AI sales assistant
-
-voice-based lead qualification
-
-intelligent CRM workflows
-
-Target Users
+# Target Users
 
 ClientPilot is designed for:
 
-Small business owners
+- Small business owners
+- Sales professionals
+- Field sales teams
+- Consultants
+- Independent service providers
 
-Sales professionals
+---
 
-Field sales teams
-
-Consultants
-
-Independent service providers
-
-Philosophy
+# Philosophy
 
 ClientPilot is based on a simple idea:
 
 CRM systems should not feel like software.
 
-They should feel like a conversation with your assistant.
+They should feel like **a conversation with your assistant**.
+
+---
+
+# License
+
+Private Project  
+All Rights Reserved
+"""
+
+path = "/mnt/data/README_ClientPilot.md"
+with open(path, "w") as f:
+    f.write(content)
+
+path
